@@ -10,7 +10,7 @@ interface RepositoryParams {
   repository: string;
 }
 
-interface Repository {
+interface Repository_Interface {
   full_name: string;
   description: string;
   stargazers_count: number;
@@ -32,7 +32,7 @@ interface Issue {
 }
 
 const Repository: React.FC = () => {
-  const [repository, setRespository] = useState<Repository | null>(null);
+  const [repository, setRespository] = useState<Repository_Interface | null>(null);
   const [issues, setIssues] = useState<Issue[]>([]);
 
   const { params } = useRouteMatch<RepositoryParams>();
@@ -91,6 +91,7 @@ const Repository: React.FC = () => {
           {issues.map(issue =>(
             <a 
             target="_blank"
+            rel="noreferrer"
             key={issue.id}
             href={issue.html_url}
           >

@@ -7,7 +7,6 @@ import api from "../../services/api";
 import logoImg from "../../assets/logo.svg";
 
 import { Title, Form, Repositories, Error } from "./styles";
-import Repository from "../Repository";
 
 interface Repository_Interface {
   full_name: string;
