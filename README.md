@@ -11,13 +11,6 @@ GitHub Researcher 🔍
 
 <hr />
 
-## Getting started
-
-_Before you run this application you need to make sure the [server](https://github.com/jpedroschmitz/gobarber-api) is running!_.
-
-1. Run `yarn` to install dependencies.<br />
-2. Run `yarn start` to see the example app at `http://localhost:3000`.
-
 
 
 
